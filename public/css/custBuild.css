@@ -1,0 +1,70 @@
+header .info
+{
+	background-color:#1A1717;
+	color: #ffffff;
+	vertical-align: middle;
+	padding: 10px;
+	margin: 0px;
+}
+
+header nav .page90 .frame-right70
+{
+	vertical-align: middle;
+	text-align: right;
+	margin-top: -45px;
+}
+
+header nav li a
+{
+	font-size: 16px;
+}
+
+.boxes
+{
+	text-align: center;
+}
+
+.boxes .cube200
+{
+	/*background-color: #DFDCDC;
+	box-shadow: 0px 0px 2px #000;*/
+	height: auto;
+}
+
+.promotion
+{
+		background: #77A79A;
+}
+
+.promotion .cube300
+{
+	width: 100%;
+	vertical-align: middle;
+	text-align: center;
+	padding: 15px;
+	margin: 20px;
+}
+
+.form .block
+{
+	padding: 10px;
+	margin: 10px;
+}
+
+footer
+{
+	margin: 0px;
+	padding: 10px;
+	text-align: center;
+	background: #1A1717;
+	color: #FFFFFF;
+}
+
+footer .frames .cell50:first-child
+{
+	text-align: left;
+}
+footer .frames .cell50:last-child
+{
+	text-align: right;
+}

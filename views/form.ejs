@@ -1,0 +1,41 @@
+<%- include ("_header") %>
+<div class="vspace"></div>
+
+<section class="form block">
+	<div class="addRecord page90">
+		<form name="new-record" method="post" action="/form">
+			<div class="block">
+				<input type="text" name="name" placeholder="Enter full name" class="element" id="name">
+			</div>
+			
+			<div class="block">
+				<input type="email" name="email" placeholder="Enter valid email ID" class="element" id="email">
+			</div>
+			
+			<div class="block">
+				<input type="text" name="mobile" placeholder="Enter valid mobile number" class="element" id="mobile">
+			</div>
+			
+			<div class="block">
+				<input type="text" name="notes" placeholder="Enter message" class="element" id="notes">
+			</div>
+			
+			<div class="block">
+				<input type="button" name="send" value="Add Record" class="button button-go" id="addData">
+			</div>
+		</form>
+	</div>
+</section>
+
+<script>
+	$('#addData').click(function(){
+				
+		$.post('/form', {'name': $('#name').val(),'email': $('#email').val(),'mobile': $('#mobile').val(),'notes': $('#notes').val()},function(d) {
+			alert('Record added sucessfully');
+		})
+		.fail(function(){
+			alert('Some error occured.');
+		});
+	});
+</script>
+<%- include ("_footer") %>
